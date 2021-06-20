@@ -19,7 +19,7 @@ getAccount();
 async function getAccount(){
     const accounts = await ethereum.request({ method: 'eth_requestAccounts'});
     const account = accounts[0];
-    showAccount.InnerHTML=account;
+    showAccount.innerHTML=account;
    
 
     const balance = await ethereum
